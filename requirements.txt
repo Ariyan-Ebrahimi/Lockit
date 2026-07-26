@@ -1,0 +1,16 @@
+# LockIt - Production Dependencies
+# Pin versions for reproducible, secure builds.
+
+# GUI Framework
+PySide6==6.7.2
+
+# Cryptography (AES-256, PBKDF2-HMAC-SHA256, secure random)
+cryptography==43.0.1
+
+# Structured logging
+loguru==0.7.2
+
+# Settings / config validation
+pydantic==2.9.2
+
+# ---- Development / Testing (optional, see requirements-dev.txt) ----

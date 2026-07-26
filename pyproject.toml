@@ -1,0 +1,31 @@
+[project]
+name = "lockit"
+version = "0.1.0"
+description = "Secure, modern file encryption desktop application."
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+disallow_untyped_defs = true
+warn_unused_ignores = true
+warn_return_any = true
+no_implicit_optional = true
+exclude = ["tests/"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --cov=core --cov=services --cov=utils --cov-report=term-missing"
+testpaths = ["tests"]

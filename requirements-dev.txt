@@ -1,0 +1,14 @@
+-r requirements.txt
+
+# Testing
+pytest==8.3.3
+pytest-qt==4.4.0
+pytest-cov==5.0.0
+
+# Linting / formatting / type checking
+black==24.8.0
+ruff==0.6.9
+mypy==1.11.2
+
+# Packaging
+pyinstaller==6.10.0
